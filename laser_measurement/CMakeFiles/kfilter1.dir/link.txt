@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/kfilter1.dir/practice-1.cpp.o  -o kfilter1 -rdynamic 
