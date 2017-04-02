@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/augumentation.dir/main.cpp.o CMakeFiles/augumentation.dir/ukf.cpp.o  -o augumentation 
