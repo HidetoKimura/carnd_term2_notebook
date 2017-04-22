@@ -75,7 +75,7 @@ public:
   double NIS_laser_;
 
   ///* measurement dimension, radar can measure r, phi, and r_dot
-  int n_z_;
+  int n_z_radar_;
   int n_z_laser_;
 
   //define spreading parameter
@@ -100,16 +100,16 @@ public:
   VectorXd weights_;
   
   //mean predicted measurement
-  VectorXd z_pred_;
+  VectorXd z_pred_radar_;
 
   //measurement covariance matrix S
-  MatrixXd S_;
+  MatrixXd S_radar_;
  
   //create example matrix with sigma points in measurement space
-  MatrixXd Zsig_;
+  MatrixXd Zsig_radar_;
 
   //create example vector for incoming radar measurement
-  VectorXd z_;
+  VectorXd z_radar_;
 
   //mean predicted measurement
   VectorXd z_pred_laser_;
