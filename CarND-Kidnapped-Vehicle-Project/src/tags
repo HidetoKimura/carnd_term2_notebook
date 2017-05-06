@@ -1,0 +1,53 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+HELPER_FUNCTIONS_H_	helper_functions.h	/^#define HELPER_FUNCTIONS_H_$/;"	d
+LandmarkObs	helper_functions.h	/^struct LandmarkObs {$/;"	s
+MAP_H_	map.h	/^#define MAP_H_$/;"	d
+Map	map.h	/^class Map {$/;"	c
+PARTICLE_FILTER_H_	particle_filter.h	/^#define PARTICLE_FILTER_H_$/;"	d
+Particle	particle_filter.h	/^struct Particle {$/;"	s
+ParticleFilter	particle_filter.h	/^	ParticleFilter() : num_particles(0), is_initialized(false) {}$/;"	f	class:ParticleFilter
+ParticleFilter	particle_filter.h	/^class ParticleFilter {$/;"	c
+control_s	helper_functions.h	/^struct control_s {$/;"	s
+dataAssociation	particle_filter.cpp	/^void ParticleFilter::dataAssociation(std::vector<LandmarkObs> predicted,$/;"	f	class:ParticleFilter
+dist	helper_functions.h	/^inline double dist(double x1, double y1, double x2, double y2) {$/;"	f
+getError	helper_functions.h	/^inline double * getError(double gt_x, double gt_y, double gt_theta, double pf_x, double pf_y, double pf_theta) {$/;"	f
+ground_truth	helper_functions.h	/^struct ground_truth {$/;"	s
+id	helper_functions.h	/^	int id;				\/\/ Id of matching landmark in the map.$/;"	m	struct:LandmarkObs
+id	particle_filter.h	/^	int id;$/;"	m	struct:Particle
+id_i	map.h	/^		int id_i ; \/\/ Landmark ID$/;"	m	struct:Map::single_landmark_s
+init	particle_filter.cpp	/^void ParticleFilter::init(double x, double y, double theta, double std[]) {$/;"	f	class:ParticleFilter
+initialized	particle_filter.h	/^	const bool initialized() const {$/;"	f	class:ParticleFilter
+is_initialized	particle_filter.h	/^	bool is_initialized;$/;"	m	class:ParticleFilter
+landmark_list	map.h	/^	std::vector<single_landmark_s> landmark_list ; \/\/ List of landmarks in the map$/;"	m	class:Map
+main	main.cpp	/^int main() {$/;"	f
+num_particles	particle_filter.h	/^	int num_particles; $/;"	m	class:ParticleFilter
+particles	particle_filter.h	/^	std::vector<Particle> particles;$/;"	m	class:ParticleFilter
+prediction	particle_filter.cpp	/^void ParticleFilter::prediction(double delta_t, double std_pos[],$/;"	f	class:ParticleFilter
+read_control_data	helper_functions.h	/^inline bool read_control_data(std::string filename, std::vector<control_s>& position_meas) {$/;"	f
+read_gt_data	helper_functions.h	/^inline bool read_gt_data(std::string filename, std::vector<ground_truth>& gt) {$/;"	f
+read_landmark_data	helper_functions.h	/^inline bool read_landmark_data(std::string filename, std::vector<LandmarkObs>& observations) {$/;"	f
+read_map_data	helper_functions.h	/^inline bool read_map_data(std::string filename, Map& map) {$/;"	f
+resample	particle_filter.cpp	/^void ParticleFilter::resample() {$/;"	f	class:ParticleFilter
+single_landmark_s	map.h	/^	struct single_landmark_s{$/;"	s	class:Map
+theta	helper_functions.h	/^	double theta;	\/\/ Global vehicle yaw [rad]$/;"	m	struct:ground_truth
+theta	particle_filter.h	/^	double theta;$/;"	m	struct:Particle
+updateWeights	particle_filter.cpp	/^void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],$/;"	f	class:ParticleFilter
+velocity	helper_functions.h	/^	double velocity;	\/\/ Velocity [m\/s]$/;"	m	struct:control_s
+weight	particle_filter.h	/^	double weight;$/;"	m	struct:Particle
+weights	particle_filter.h	/^	std::vector<double> weights;$/;"	m	class:ParticleFilter
+write	particle_filter.cpp	/^void ParticleFilter::write(std::string filename) {$/;"	f	class:ParticleFilter
+x	helper_functions.h	/^	double x;			\/\/ Local (vehicle coordinates) x position of landmark observation [m]$/;"	m	struct:LandmarkObs
+x	helper_functions.h	/^	double x;		\/\/ Global vehicle x position [m]$/;"	m	struct:ground_truth
+x	particle_filter.h	/^	double x;$/;"	m	struct:Particle
+x_f	map.h	/^		float x_f; \/\/ Landmark x-position in the map (global coordinates)$/;"	m	struct:Map::single_landmark_s
+y	helper_functions.h	/^	double y;			\/\/ Local (vehicle coordinates) y position of landmark observation [m]$/;"	m	struct:LandmarkObs
+y	helper_functions.h	/^	double y;		\/\/ Global vehicle y position$/;"	m	struct:ground_truth
+y	particle_filter.h	/^	double y;$/;"	m	struct:Particle
+y_f	map.h	/^		float y_f; \/\/ Landmark y-position in the map (global coordinates)$/;"	m	struct:Map::single_landmark_s
+yawrate	helper_functions.h	/^	double yawrate;		\/\/ Yaw rate [rad\/s]$/;"	m	struct:control_s
+~ParticleFilter	particle_filter.h	/^	~ParticleFilter() {}$/;"	f	class:ParticleFilter
