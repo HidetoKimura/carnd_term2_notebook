@@ -85,7 +85,8 @@ void ParticleFilter::dataAssociation(std::vector<LandmarkObs> predicted, std::ve
 	//   observed measurement to this particular landmark.
 	// NOTE: this method will NOT be called by the grading code. But you will probably find it useful to 
 	//   implement this method and use it as a helper during the updateWeights phase.
-	double length, shortest;
+	double length = 0.0;
+	double shortest = 100.0;
 	int shortest_id = -1;
 	for(auto obs: observasions) {
 		for(auto map: predicted) {
