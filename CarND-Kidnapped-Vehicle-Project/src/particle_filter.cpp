@@ -136,14 +136,14 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
 
 		/* choose landmarks within sensor_range */
 	    vector<LandmarkObs> predicted;
-    	for (auto& landmark : map_landmarks.landmark_list) {
-      		if (dist(x, y, landmark.x_f, landmark.y_f) < sensor_range) {
+		for (auto& landmark : map_landmarks.landmark_list) {
+			if (dist(x, y, landmark.x_f, landmark.y_f) < sensor_range) {
 				LandmarkObs lm_obj;
-        		lm_obj.id = landmark.id_i;	
+				lm_obj.id = landmark.id_i;	
 				lm_obj.x  = landmark.x_f;
 				lm_obj.y  = landmark.y_f;
-        		predicted.push_back(lm_obj);
-      		}
+				predicted.push_back(lm_obj);
+			}
 		}
 
 		dataAssociation(predicted, global_obs);
